@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-image: linear-gradient(to right, #141e30, #243b55);
+  color: rgb(192, 209, 227);
+}
+.header {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 2rem 2rem 2rem;
+  flex-wrap: wrap;
+}
+.left {
+  font-family: "Shadows Into Light", cursive;
+  cursor: pointer;
+  font-size: 2rem;
+  color: aliceblue;
+}
+.left:hover {
+  color: aqua;
+  transition: 0.5s ease;
+  transform: scale(1.5);
+}
+.center {
+  margin-top: 1rem;
+}
+.center a {
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  color: rgb(204, 211, 211);
+  text-decoration: none;
+  padding: 1rem;
+}
+.center a:hover {
+  color: aqua;
+  transition: 0.5s ease;
+}
+
+.right button {
+  background-color: #71bc68; /* Green */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+}
+.right button:hover {
+  background-color: #4c794e; /* Green */
+  color: azure;
+  transition: 0.1s ease;
+  transform: scale(1.1);
+}
+/* ------------------------------------------------------------------------------------------------ */
+.name {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 6rem;
+  text-align: center;
+  margin-top: 8rem;
+  background: linear-gradient(
+    to right,
+    #7953cd 20%,
+    #00affa 30%,
+    #0190cd 70%,
+    #764ada 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShine 5s ease-in-out infinite alternate;
+  cursor: pointer;
+}
+@keyframes textShine {
+  0% {
+    background-position: 0% 33%;
+  }
+  50% {
+    background-position: 34% 78%;
+  }
+  100% {
+    background-position: 80% 100%;
+  }
+}
+.intro {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  text-align: center;
+  color: aliceblue;
+}
+
+.button {
+  text-align: center;
+  padding: 3rem 1rem 1rem 1rem;
+}
+.contact {
+  text-align: center;
+  background: #5e5df0;
+  border-radius: 999px;
+  box-shadow: #5e5df0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+.contact:hover {
+  transform: scale(1.1);
+  transition: 0.4s ease;
+}
+
+.skills h1 {
+  font-family: "Nunito", sans-serif;
+  margin-top: 6rem;
+  text-align: center;
+}
+.skill-icon {
+  padding: 3rem 3rem 3rem 6rem;
+  margin: 2rem 3rem 3rem 3rem;
+}
+.skill-icon img {
+  size: 5px;
+  height: 60px;
+  width: 60px;
+}
+/* .area {
+  background: #4e54c8;
+  background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+  width: 100%;
+  height: 100%;
+}
+
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+} */
+
+img {
+  margin-right: 50px;
+  margin-top: 50px;
+  height: 65px;
+  width: 65px;
+}
+
+.skills-icons {
+  margin: 1rem 2rem 2rem 2rem;
+  padding-left: 9rem;
+  padding-right: 3rem;
+}
+
+img:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease;
+  box-shadow: inset 0 0 100px 100px rgba(255, 249, 249, 0.1);
+}
+.projects h1 {
+  font-family: "Nunito", sans-serif;
+  margin-top: 9rem;
+  text-align: center;
+}
+.card {
+  --background: linear-gradient(to left, #8f94fb 0%, #4e54c8 100%);
+  width: 900px;
+  height: 300px;
+  padding: 5px;
+  border-radius: 1rem;
+  overflow: visible;
+  background: #f7ba2b;
+  background: var(--background);
+  position: relative;
+  margin: 4rem 4rem 4rem 12rem;
+  z-index: 1;
+}
+
+.card-info {
+  --color: #001b32;
+  background: var(--color);
+  color: var(--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  border-radius: 0.7rem;
+  color: whitesmoke;
+}
+.card-info img {
+  width: 400px;
+  height: 232px;
+  padding-left: 30px;
+  padding-bottom: 60px;
+}
+#portfolio h1 {
+  font-family: "Nunito", sans-serif;
+  padding: -4rem 4rem 4rem 4rem;
+  margin: -3rem -1rem 2rem 0rem;
+}
+#portfolio p {
+  font-family: Nunito, sans-serif;
+  margin: -1rem 1rem 1rem 0rem;
+}
+/* --------------------------------------------- */
+.insta h1 {
+  font-family: "Nunito", sans-serif;
+  margin-top: 9rem;
+  text-align: center;
+}
+.insta img {
+  margin-left: 380px;
+  height: 500px;
+  width: 500px;
+}
+footer {
+  background-color: #141e30;
+  height: 75px;
+  margin-top: 5rem;
+}
+footer p {
+  text-align: center;
+  padding-top: 2rem;
+  font-family: "nunito", sans-serif;
+}
