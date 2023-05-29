@@ -27,6 +27,8 @@ Basic Footer 😜
 <img width="945" alt="image" src="https://github.com/khumanshusingh/Portfolio-HTML-and-CSS/assets/90241431/a5509e58-f9ed-4298-86ea-525a9758e9a7">
 
 
+
+
 More Iterations of the Portfolio Website will come as i learn more and more
 ![625](https://github.com/khumanshusingh/Portfolio-Website-Using-HTML-and-CSS/assets/90241431/552b4ea4-3870-4cd3-bd2f-0eee88b260a6)
 
